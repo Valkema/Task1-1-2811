@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.userCard {
+  width: 100%;
+  height: 100vh;
+  background: rgb (22, 22, 27);
+  background: linear-gradient(
+    180deg,
+    rgba(22, 22, 27, 1) 17%,
+    rgba(38, 38, 42, 1) 43%,
+    rgba(90, 90, 96, 1) 100%,
+    rgba(46, 46, 49, 1) 100%,
+    rgba(32, 32, 34, 1) 100%,
+    rgba(17, 17, 18, 0.9192051820728291) 100%,
+    rgba(56, 56, 60, 1) 100%,
+    rgba(55, 57, 57, 1) 100%,
+    rgba(58, 58, 65, 1) 100%,
+    rgba(11, 11, 15, 0.8127626050420168) 100%,
+    rgba(132, 136, 136, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.userPhoto {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: -10px 42px 55px -8px rgba(0, 0, 0, 0.69);
+  position: relative;
+  z-index: 8;
+}
+
+.userInfo {
+  position: absolute;
+  top: 50%;
+  color: aliceblue;
+  z-index: 10;
+  text-align: center;
+}
+
+.userInfo > h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.userInfo > p {
+  font-size: 14px;
+}
+
+.userPhoto > img {
+  object-fit: cover;
+  width: inherit;
+  height: inherit;
+}
+
+.userStat {
+  background-color: aliceblue;
+  width: 230px;
+  height: 70px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: -10px 42px 55px -8px rgba(0, 0, 0, 0.59);
+  z-index: 5;
+}
+
+.userStatValue,
+.userStatName {
+  display: flex;
+}
+
+.userStatValue > p {
+  font-weight: 600;
+  font-size: 18px;
+  width: 33%;
+  text-align: center;
+}
+
+.userStatName > p {
+  color: rgba(58, 58, 65, 1);
+  font-size: 14px;
+  width: 33%;
+  text-align: center;
+}
+
+.userButton {
+  width: 200px;
+  height: 60px;
+  background-color: rgba(253, 39, 146, 0.938);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -10px 21px 36px 10px rgba(92, 15, 44, 0.69);
+}
+
+.userButton > p {
+  color: aliceblue;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
